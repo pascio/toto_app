@@ -1,0 +1,9 @@
+<div id="header">
+		<%= link_to logo, root_path %>
+  
+  <ul class="navigation round">
+ 	  <li><%= link_to_unless_current("Start", :action => "start") %></li>
+	  <li><%= link_to_unless_current("Login", :action => "login") %></li>
+	  <li><%= link_to_unless_current("Hilfe", :action => "hilfe") %></li>
+	</ul>
+</div>

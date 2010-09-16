@@ -7,18 +7,11 @@
   </head>
   <body>
 	<div class="container">
-	  <div id="header">
-		<%= link_to_unless_current("Start", :action => "start") %>
-		<%= link_to_unless_current("Login", :action => "login") %>
-		<%= link_to_unless_current("Hilfe", :action => "hilfe") %>
-	  </div>
+	  <%= render 'layouts/header'%>
 	  <div id="content" class="round">
 		<%= yield %>
 	  </div>
-	  <div id="footer">
-		<%= link_to_unless_current("Impressum", :action => "impressum") %>
-		<%= link_to_unless_current("Kontakt", :action => "kontakt") %>
-	  </div>
+	  <%= render 'layouts/footer' %>
 	  <%= debug(params) if Rails.env.development? %>
 	</div>
   </body>

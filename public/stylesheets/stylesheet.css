@@ -5,10 +5,7 @@ margin-right:auto;
 }
 
 #header {
-margin-top: 20px;
-background: #fff;
-text-align:right;
-padding: 10px;
+padding: 20px 0px;
 }
 
 #content {
@@ -23,7 +20,60 @@ background: #fff;
 padding: 10px;
 }
 
+#logo {
+background: #fff;
+width:200px;
+float:none;
+}
+
 body {
 background: #71aef2;
 }
 
+
+.navigation {
+ float: right;
+}
+
+.navigation {
+background-color: #fff;
+padding: 0 0.7em;
+}
+
+ul.navigation {
+margin: 0;
+}
+
+.navigation li {
+list-style-type: none;
+display: inline-block;
+}
+
+.navigation li a, li a:visited {
+font-weight: bold;
+padding: 0 5px;
+text-decoration: none;
+}
+
+.navigation li a:hover {
+text-decoration: underline;
+}
+
+#footer {
+  text-align: center;
+  padding: 5px;
+}
+
+#footer .navigation {
+  float:none;
+}
+
+/* Round corners */
+
+.round {
+  -moz-border-radius:		10px;
+  -webkit-border-radius:	10px;
+  border-radius:			10px;
+}
+
+}
